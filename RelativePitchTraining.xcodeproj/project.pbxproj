@@ -11,6 +11,9 @@
 		172B1F0C2B566F22005AC68C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F0B2B566F22005AC68C /* ContentView.swift */; };
 		172B1F0E2B566F23005AC68C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172B1F0D2B566F23005AC68C /* Assets.xcassets */; };
 		172B1F112B566F23005AC68C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 172B1F102B566F23005AC68C /* Preview Assets.xcassets */; };
+		172B1F1A2B567361005AC68C /* KeyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F192B567361005AC68C /* KeyState.swift */; };
+		172B1F1C2B567370005AC68C /* KeyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F1B2B567370005AC68C /* KeyShape.swift */; };
+		172B1F1E2B567387005AC68C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F1D2B567387005AC68C /* KeyboardView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +22,9 @@
 		172B1F0B2B566F22005AC68C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		172B1F0D2B566F23005AC68C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		172B1F102B566F23005AC68C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		172B1F192B567361005AC68C /* KeyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyState.swift; sourceTree = "<group>"; };
+		172B1F1B2B567370005AC68C /* KeyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyShape.swift; sourceTree = "<group>"; };
+		172B1F1D2B567387005AC68C /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +57,7 @@
 		172B1F082B566F22005AC68C /* RelativePitchTraining */ = {
 			isa = PBXGroup;
 			children = (
+				172B1F172B56724A005AC68C /* Feature */,
 				172B1F092B566F22005AC68C /* RelativePitchTrainingApp.swift */,
 				172B1F0B2B566F22005AC68C /* ContentView.swift */,
 				172B1F0D2B566F23005AC68C /* Assets.xcassets */,
@@ -65,6 +72,24 @@
 				172B1F102B566F23005AC68C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		172B1F172B56724A005AC68C /* Feature */ = {
+			isa = PBXGroup;
+			children = (
+				172B1F182B567253005AC68C /* Keyboard */,
+			);
+			path = Feature;
+			sourceTree = "<group>";
+		};
+		172B1F182B567253005AC68C /* Keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				172B1F192B567361005AC68C /* KeyState.swift */,
+				172B1F1D2B567387005AC68C /* KeyboardView.swift */,
+				172B1F1B2B567370005AC68C /* KeyShape.swift */,
+			);
+			path = Keyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +163,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				172B1F0C2B566F22005AC68C /* ContentView.swift in Sources */,
+				172B1F1A2B567361005AC68C /* KeyState.swift in Sources */,
 				172B1F0A2B566F22005AC68C /* RelativePitchTrainingApp.swift in Sources */,
+				172B1F1E2B567387005AC68C /* KeyboardView.swift in Sources */,
+				172B1F1C2B567370005AC68C /* KeyShape.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
