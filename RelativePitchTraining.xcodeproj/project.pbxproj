@@ -14,6 +14,7 @@
 		172B1F1A2B567361005AC68C /* KeyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F192B567361005AC68C /* KeyState.swift */; };
 		172B1F1C2B567370005AC68C /* KeyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F1B2B567370005AC68C /* KeyShape.swift */; };
 		172B1F1E2B567387005AC68C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F1D2B567387005AC68C /* KeyboardView.swift */; };
+		17F1BB4B2B581CAB00950392 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB4A2B581CAB00950392 /* Note.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		172B1F192B567361005AC68C /* KeyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyState.swift; sourceTree = "<group>"; };
 		172B1F1B2B567370005AC68C /* KeyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyShape.swift; sourceTree = "<group>"; };
 		172B1F1D2B567387005AC68C /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
+		17F1BB4A2B581CAB00950392 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +89,7 @@
 			children = (
 				172B1F192B567361005AC68C /* KeyState.swift */,
 				172B1F1D2B567387005AC68C /* KeyboardView.swift */,
+				17F1BB4A2B581CAB00950392 /* Note.swift */,
 				172B1F1B2B567370005AC68C /* KeyShape.swift */,
 			);
 			path = Keyboard;
@@ -167,6 +170,7 @@
 				172B1F0A2B566F22005AC68C /* RelativePitchTrainingApp.swift in Sources */,
 				172B1F1E2B567387005AC68C /* KeyboardView.swift in Sources */,
 				172B1F1C2B567370005AC68C /* KeyShape.swift in Sources */,
+				17F1BB4B2B581CAB00950392 /* Note.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

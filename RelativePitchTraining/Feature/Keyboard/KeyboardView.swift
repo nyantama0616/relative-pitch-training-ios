@@ -6,10 +6,10 @@ import SwiftUI
 
 struct KeyboardView: View {
     private var keys: [KeyState]
-    private let onKeyTouched: (Int) -> Void
-    private let onKeyReleased: (Int) -> Void
+    private let onKeyTouched: (Note) -> Void
+    private let onKeyReleased: (Note) -> Void
     
-    init(onKeyTouched: @escaping (Int) -> Void, onKeyReleased: @escaping (Int) -> Void) {
+    init(onKeyTouched: @escaping (Note) -> Void, onKeyReleased: @escaping (Note) -> Void) {
         // 1オクターブ（0~12）の範囲での黒鍵のインデックス
         let blacks: [Int] = [1, 3, 6, 8, 10]
         // 12鍵盤 × 3オクターブ + ラスト1鍵盤
@@ -32,7 +32,7 @@ struct KeyboardView: View {
                         .aspectRatio(0.08, contentMode: .fit) //1鍵盤の高さを1とした時の幅を0.16として、その半分
                         .zIndex(keyState.zIndex) //黒鍵はzIndexで手前に描画する
                         .onLongPressGesture(minimumDuration: .infinity, maximumDistance: .infinity, pressing: { isPressing in //TODO: これだと恐らくグリッサンドできない
-                            let note = offset + 48
+                            let note = Note(offset + 48)
                             // タッチダウンとタッチアップを検出
                             if isPressing {
                                 self.onKeyTouched(note)
