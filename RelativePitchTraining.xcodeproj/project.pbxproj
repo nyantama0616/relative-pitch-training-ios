@@ -15,6 +15,15 @@
 		172B1F1C2B567370005AC68C /* KeyShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F1B2B567370005AC68C /* KeyShape.swift */; };
 		172B1F1E2B567387005AC68C /* KeyboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 172B1F1D2B567387005AC68C /* KeyboardView.swift */; };
 		17F1BB4B2B581CAB00950392 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB4A2B581CAB00950392 /* Note.swift */; };
+		17F1BB4F2B58DB0200950392 /* PingQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB4E2B58DB0200950392 /* PingQuery.swift */; };
+		17F1BB512B58DCAD00950392 /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB502B58DCAD00950392 /* API.swift */; };
+		17F1BB532B58DFE100950392 /* PingModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB522B58DFE100950392 /* PingModel.swift */; };
+		17F1BB552B58DFEE00950392 /* PingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB542B58DFEE00950392 /* PingViewModel.swift */; };
+		17F1BB572B58DFF400950392 /* PingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB562B58DFF400950392 /* PingView.swift */; };
+		17F1BB5A2B58E9A900950392 /* PingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB592B58E9A900950392 /* PingResponse.swift */; };
+		17F1BB5C2B58F4A700950392 /* PingQueryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB5B2B58F4A700950392 /* PingQueryProtocol.swift */; };
+		17F1BB5E2B58F59300950392 /* PingQueryMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB5D2B58F59300950392 /* PingQueryMock.swift */; };
+		17F1BB612B58FCA400950392 /* ErrorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB602B58FCA400950392 /* ErrorView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +36,15 @@
 		172B1F1B2B567370005AC68C /* KeyShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyShape.swift; sourceTree = "<group>"; };
 		172B1F1D2B567387005AC68C /* KeyboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardView.swift; sourceTree = "<group>"; };
 		17F1BB4A2B581CAB00950392 /* Note.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		17F1BB4E2B58DB0200950392 /* PingQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingQuery.swift; sourceTree = "<group>"; };
+		17F1BB502B58DCAD00950392 /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		17F1BB522B58DFE100950392 /* PingModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingModel.swift; sourceTree = "<group>"; };
+		17F1BB542B58DFEE00950392 /* PingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingViewModel.swift; sourceTree = "<group>"; };
+		17F1BB562B58DFF400950392 /* PingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingView.swift; sourceTree = "<group>"; };
+		17F1BB592B58E9A900950392 /* PingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingResponse.swift; sourceTree = "<group>"; };
+		17F1BB5B2B58F4A700950392 /* PingQueryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingQueryProtocol.swift; sourceTree = "<group>"; };
+		17F1BB5D2B58F59300950392 /* PingQueryMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingQueryMock.swift; sourceTree = "<group>"; };
+		17F1BB602B58FCA400950392 /* ErrorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,6 +79,7 @@
 			children = (
 				172B1F172B56724A005AC68C /* Feature */,
 				172B1F092B566F22005AC68C /* RelativePitchTrainingApp.swift */,
+				17F1BB502B58DCAD00950392 /* API.swift */,
 				172B1F0B2B566F22005AC68C /* ContentView.swift */,
 				172B1F0D2B566F23005AC68C /* Assets.xcassets */,
 				172B1F0F2B566F23005AC68C /* Preview Content */,
@@ -79,6 +98,8 @@
 		172B1F172B56724A005AC68C /* Feature */ = {
 			isa = PBXGroup;
 			children = (
+				17F1BB5F2B58FC9B00950392 /* Error */,
+				17F1BB4C2B58DA4400950392 /* Query */,
 				172B1F182B567253005AC68C /* Keyboard */,
 			);
 			path = Feature;
@@ -93,6 +114,44 @@
 				172B1F1B2B567370005AC68C /* KeyShape.swift */,
 			);
 			path = Keyboard;
+			sourceTree = "<group>";
+		};
+		17F1BB4C2B58DA4400950392 /* Query */ = {
+			isa = PBXGroup;
+			children = (
+				17F1BB4D2B58DA7300950392 /* Ping */,
+			);
+			path = Query;
+			sourceTree = "<group>";
+		};
+		17F1BB4D2B58DA7300950392 /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+				17F1BB582B58E99B00950392 /* Response */,
+				17F1BB4E2B58DB0200950392 /* PingQuery.swift */,
+				17F1BB522B58DFE100950392 /* PingModel.swift */,
+				17F1BB542B58DFEE00950392 /* PingViewModel.swift */,
+				17F1BB562B58DFF400950392 /* PingView.swift */,
+				17F1BB5B2B58F4A700950392 /* PingQueryProtocol.swift */,
+				17F1BB5D2B58F59300950392 /* PingQueryMock.swift */,
+			);
+			path = Ping;
+			sourceTree = "<group>";
+		};
+		17F1BB582B58E99B00950392 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				17F1BB592B58E9A900950392 /* PingResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		17F1BB5F2B58FC9B00950392 /* Error */ = {
+			isa = PBXGroup;
+			children = (
+				17F1BB602B58FCA400950392 /* ErrorView.swift */,
+			);
+			path = Error;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,12 +224,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17F1BB5E2B58F59300950392 /* PingQueryMock.swift in Sources */,
 				172B1F0C2B566F22005AC68C /* ContentView.swift in Sources */,
 				172B1F1A2B567361005AC68C /* KeyState.swift in Sources */,
+				17F1BB5A2B58E9A900950392 /* PingResponse.swift in Sources */,
+				17F1BB4F2B58DB0200950392 /* PingQuery.swift in Sources */,
+				17F1BB532B58DFE100950392 /* PingModel.swift in Sources */,
+				17F1BB5C2B58F4A700950392 /* PingQueryProtocol.swift in Sources */,
+				17F1BB552B58DFEE00950392 /* PingViewModel.swift in Sources */,
 				172B1F0A2B566F22005AC68C /* RelativePitchTrainingApp.swift in Sources */,
 				172B1F1E2B567387005AC68C /* KeyboardView.swift in Sources */,
+				17F1BB612B58FCA400950392 /* ErrorView.swift in Sources */,
+				17F1BB512B58DCAD00950392 /* API.swift in Sources */,
 				172B1F1C2B567370005AC68C /* KeyShape.swift in Sources */,
 				17F1BB4B2B581CAB00950392 /* Note.swift in Sources */,
+				17F1BB572B58DFF400950392 /* PingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
