@@ -31,6 +31,13 @@
 		17F1BB6E2B5918D700950392 /* UserQueryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB6D2B5918D700950392 /* UserQueryView.swift */; };
 		17F1BB702B59196700950392 /* UserQueryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB6F2B59196700950392 /* UserQueryViewModel.swift */; };
 		17F1BB722B59207E00950392 /* CreateUserRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB712B59207E00950392 /* CreateUserRequest.swift */; };
+		17F1BB752B592B9F00950392 /* AuthQuery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB742B592B9F00950392 /* AuthQuery.swift */; };
+		17F1BB772B592BAB00950392 /* AuthQueryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB762B592BAB00950392 /* AuthQueryProtocol.swift */; };
+		17F1BB7A2B59310A00950392 /* SignInResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB792B59310A00950392 /* SignInResponse.swift */; };
+		17F1BB7C2B59321200950392 /* AuthModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB7B2B59321200950392 /* AuthModel.swift */; };
+		17F1BB7E2B59322100950392 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB7D2B59322100950392 /* AuthViewModel.swift */; };
+		17F1BB802B59322600950392 /* AuthView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB7F2B59322600950392 /* AuthView.swift */; };
+		17F1BB832B59371E00950392 /* SignInRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17F1BB822B59371E00950392 /* SignInRequest.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -59,6 +66,13 @@
 		17F1BB6D2B5918D700950392 /* UserQueryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQueryView.swift; sourceTree = "<group>"; };
 		17F1BB6F2B59196700950392 /* UserQueryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserQueryViewModel.swift; sourceTree = "<group>"; };
 		17F1BB712B59207E00950392 /* CreateUserRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateUserRequest.swift; sourceTree = "<group>"; };
+		17F1BB742B592B9F00950392 /* AuthQuery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthQuery.swift; sourceTree = "<group>"; };
+		17F1BB762B592BAB00950392 /* AuthQueryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthQueryProtocol.swift; sourceTree = "<group>"; };
+		17F1BB792B59310A00950392 /* SignInResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInResponse.swift; sourceTree = "<group>"; };
+		17F1BB7B2B59321200950392 /* AuthModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthModel.swift; sourceTree = "<group>"; };
+		17F1BB7D2B59322100950392 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		17F1BB7F2B59322600950392 /* AuthView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthView.swift; sourceTree = "<group>"; };
+		17F1BB822B59371E00950392 /* SignInRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInRequest.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +147,7 @@
 		17F1BB4C2B58DA4400950392 /* Query */ = {
 			isa = PBXGroup;
 			children = (
+				17F1BB732B592B5300950392 /* Auth */,
 				17F1BB622B5910D000950392 /* User */,
 				17F1BB4D2B58DA7300950392 /* Ping */,
 			);
@@ -197,6 +212,36 @@
 				17F1BB712B59207E00950392 /* CreateUserRequest.swift */,
 			);
 			path = Request;
+			sourceTree = "<group>";
+		};
+		17F1BB732B592B5300950392 /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				17F1BB812B59370B00950392 /* SignInRequest */,
+				17F1BB782B5930FD00950392 /* Response */,
+				17F1BB742B592B9F00950392 /* AuthQuery.swift */,
+				17F1BB7B2B59321200950392 /* AuthModel.swift */,
+				17F1BB7D2B59322100950392 /* AuthViewModel.swift */,
+				17F1BB7F2B59322600950392 /* AuthView.swift */,
+				17F1BB762B592BAB00950392 /* AuthQueryProtocol.swift */,
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		17F1BB782B5930FD00950392 /* Response */ = {
+			isa = PBXGroup;
+			children = (
+				17F1BB792B59310A00950392 /* SignInResponse.swift */,
+			);
+			path = Response;
+			sourceTree = "<group>";
+		};
+		17F1BB812B59370B00950392 /* SignInRequest */ = {
+			isa = PBXGroup;
+			children = (
+				17F1BB822B59371E00950392 /* SignInRequest.swift */,
+			);
+			path = SignInRequest;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,7 +315,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				17F1BB5E2B58F59300950392 /* PingQueryMock.swift in Sources */,
+				17F1BB752B592B9F00950392 /* AuthQuery.swift in Sources */,
 				172B1F0C2B566F22005AC68C /* ContentView.swift in Sources */,
+				17F1BB7C2B59321200950392 /* AuthModel.swift in Sources */,
+				17F1BB7A2B59310A00950392 /* SignInResponse.swift in Sources */,
 				172B1F1A2B567361005AC68C /* KeyState.swift in Sources */,
 				17F1BB702B59196700950392 /* UserQueryViewModel.swift in Sources */,
 				17F1BB5A2B58E9A900950392 /* PingResponse.swift in Sources */,
@@ -280,8 +328,11 @@
 				17F1BB5C2B58F4A700950392 /* PingQueryProtocol.swift in Sources */,
 				17F1BB552B58DFEE00950392 /* PingViewModel.swift in Sources */,
 				172B1F0A2B566F22005AC68C /* RelativePitchTrainingApp.swift in Sources */,
+				17F1BB802B59322600950392 /* AuthView.swift in Sources */,
+				17F1BB772B592BAB00950392 /* AuthQueryProtocol.swift in Sources */,
 				17F1BB6E2B5918D700950392 /* UserQueryView.swift in Sources */,
 				172B1F1E2B567387005AC68C /* KeyboardView.swift in Sources */,
+				17F1BB7E2B59322100950392 /* AuthViewModel.swift in Sources */,
 				17F1BB612B58FCA400950392 /* ErrorView.swift in Sources */,
 				17F1BB512B58DCAD00950392 /* API.swift in Sources */,
 				17F1BB682B5912AD00950392 /* UserQueryProtocol.swift in Sources */,
@@ -289,6 +340,7 @@
 				172B1F1C2B567370005AC68C /* KeyShape.swift in Sources */,
 				17F1BB722B59207E00950392 /* CreateUserRequest.swift in Sources */,
 				17F1BB4B2B581CAB00950392 /* Note.swift in Sources */,
+				17F1BB832B59371E00950392 /* SignInRequest.swift in Sources */,
 				17F1BB572B58DFF400950392 /* PingView.swift in Sources */,
 				17F1BB642B5910F300950392 /* UserQuery.swift in Sources */,
 			);

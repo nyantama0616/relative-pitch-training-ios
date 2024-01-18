@@ -6,4 +6,8 @@ public struct API {
         public static let fetchAll = "\(API.baseURL)/users"
         public static let create = "\(API.baseURL)/users"
     }
+
+    public struct auth {
+        public static let signIn = "\(API.baseURL)/signin"
+    }
 }
