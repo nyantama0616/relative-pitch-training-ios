@@ -10,6 +10,10 @@ public struct UserQueryView: View {
                 Button("Fetch All") {
                     viewModel.fetchAll()
                 }
+
+                Button("Create") {
+                    viewModel.create()
+                }
             }
         }
     }

@@ -4,5 +4,6 @@ public struct API {
     
     public struct user {
         public static let fetchAll = "\(API.baseURL)/users"
+        public static let create = "\(API.baseURL)/users"
     }
 }

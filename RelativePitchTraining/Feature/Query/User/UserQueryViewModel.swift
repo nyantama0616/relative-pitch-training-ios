@@ -16,4 +16,16 @@ public class UserQueryViewModel: ObservableObject {
             }
         }
     }
+
+    public func create() {
+        let email = "eee@example.com"
+        userQuery.create(userName: "test", email: email, password: "pass") { result in
+            switch result {
+            case .success:
+                print("Success: \(email)")
+            case .failure(let error):
+                print("Error: \(error)")
+            }
+        }
+    }
 }
